@@ -13,7 +13,7 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Publish package
-        CD /parent
+        CD parent
         run: mvn --batch-mode deploy
         env:
           GITHUB_TOKEN: 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
