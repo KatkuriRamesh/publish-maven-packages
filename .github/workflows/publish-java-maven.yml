@@ -12,7 +12,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
-      - name: Publish package
+      - name: Publish packages to repo
         working-directory: ./parent
         run: mvn --batch-mode deploy
         env:
