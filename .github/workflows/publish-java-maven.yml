@@ -16,4 +16,4 @@ jobs:
         working-directory: ./parent
         run: mvn --batch-mode deploy
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.JAVA_TOKEN }}
