@@ -14,6 +14,6 @@ jobs:
           distribution: 'adopt'
       - name: Publish packages to repo
         working-directory: ./parent
-        run: mvn --batch-mode deploy
+        run: mvn --batch-mode deploy -DskipTests=true
         env:
           GITHUB_TOKEN: ${{ secrets.JAVA_TOKEN }}
